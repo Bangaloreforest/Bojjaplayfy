@@ -1,0 +1,42 @@
+.trendingCardMainCointainer{
+    /* border: 2px solid white; */
+    display: flex;
+    height: 85%;
+    margin-top: 1rem;
+    justify-content: space-between;
+    
+    
+}
+
+.CardMainCointainer{
+    /* border: 2px solid white; */
+    width: 16%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+       
+}
+
+
+.CardMainCointainer img{
+    width: 98%;
+    border-radius: 10px;
+}
+
+.CardTextCointainer{
+    width: 100;
+    margin-top: 10px;
+
+}
+
+.CardTextCointainer h2{
+    font-size: 1rem;
+
+}
+
+.CardTextCointainer p{
+    font-size: 0.7rem;
+
+}

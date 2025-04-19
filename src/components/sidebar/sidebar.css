@@ -1,0 +1,126 @@
+.sidebarMainContainer{
+    /* border: 2px solid wheat; */
+    background-image: linear-gradient(to bottom, rgb(92, 92, 92), black);
+    width: 25%;
+    border-radius: 10px;
+    height: 99%;
+    
+}
+
+.sidebarTopSection{
+    /* border: 2px solid red; */
+    height: 10%;
+    border-top-left-radius: 10px;
+    border-top-Right-radius: 10px;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1rem;
+    box-shadow: 1px, 1px, 10px black;
+}
+
+.sidebarTopSection h1 {
+    font-size: 1rem;
+}
+
+.sidebarTopSection p {
+    font-size: 1rem;
+}
+
+.sidebarMiddleSection{
+    /* border: 2px solid red;  */
+    height: 40%;    
+    overflow-y: scroll;
+    /*border-bottom-left-radius: 10px;
+    border-bottom-Right-radius: 10px;*/
+    background-color: #3b3b3b;
+}
+
+
+
+/*cards styles*/
+
+.sidebarMiddleCards{
+    /*border: 2px solid blue;*/
+    border-radius: 10px;
+    margin: 1.5rem 0.5rem;
+    padding: 1rem;
+    background-color: rgba(73, 73, 73, 0.838);
+
+}
+
+.sidebarMiddleCards h1{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.sidebarMiddleCards p {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.sidebarMiddleCards button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(54, 54, 54);
+    color: rgb(202, 200, 200);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+}
+
+.sidebarBottomSection{
+    height: 45%;
+    
+    
+}
+
+.sidebarBottomSectionTopContainer{
+    /* border: 2px solid green; */
+    height: 45%;
+    padding: 0.5rem;
+    padding-bottom: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+}
+
+.sidebarBottomSectionTopContainer p{
+    margin: 0.3rem;
+    font-size: 0.6rem;
+}
+
+
+
+.sidebarBottomSectionBottomContainer{
+    /* border: 2px solid blue; */
+    margin-top: 0.5rem;
+    justify-content: center; 
+}
+
+.sidebarBottomSectionBottomContainer p{
+    margin: 0.5rem;
+    margin-left: 2rem;
+    font-size: 0.7rem; 
+    font-weight: 600;  
+     
+}
+
+.sidebarBottomSectionBottomContainer button{
+    color: rgb(148, 146, 146);
+    border: 2px solid rgb(240, 237, 237);
+    border-radius: 20px;
+    background-color: #242424;
+    padding: 0.3rem 0.8rem;
+    outline: none;
+    margin-left: 1rem;
+    
+}
+
+.sidebarBottomSectionBottomContainer button:hover{
+    color: blue;
+}
