@@ -3,10 +3,10 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    /*<div>Footer</div> replace with nav <tag></tag> */
-    <footer>
-      Footerbar
-    </footer>
+    <div className='footerSectionMainCointainer'>
+        Footer
+    </div> 
+   
   )
 }
 

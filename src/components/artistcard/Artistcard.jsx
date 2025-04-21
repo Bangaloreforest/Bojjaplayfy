@@ -3,7 +3,7 @@ import './artistcard.css'
 import { artistList } from '../../config/confige'
 
 
-const Artistcard = () => {
+const Artistcard = ({setCurrentPage}) => {
 
   return (
     <>
@@ -12,7 +12,9 @@ const Artistcard = () => {
         artistList.map((ele) => {
             return (
               <>
-              <div className='artistCardImgCointainer'>
+              <div onClick={()=>{
+                setCurrentPage("aristSpecificPage")
+                }} className='artistCardImgCointainer'>
                 <img src={ele.imgSrc} alt=""/>
                 <div className="artistCardTextCointainer">
                   <h2>{ele.name}</h2>

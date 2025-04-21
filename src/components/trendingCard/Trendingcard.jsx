@@ -3,19 +3,22 @@ import './trendingcard.css'
 import { TrendingCardData } from '../../config/confige'
 
 
-const Trendingcard = () => {
+const Trendingcard = ({setCurrentPage, setCurrentEle}) => {
 
   return (
     <>
         <div className='trendingCardMainCointainer'>
       {
-       TrendingCardData.map((ele) => {
+       TrendingCardData.map((ele, id) => {
           return (
            <>
-           <div className='CardMainCointainer'>
+           <div ket={id} onClick= {() =>{
+            setCurrentPage("musicSpecificPage")
+            setCurrentEle(ele)
+           }} className='CardMainCointainer'>
             <img src={ele.imgSrc} alt=""/>
             <div className="CardTextCointainer">
-            <h2>{ele.heading}</h2>
+            <h2>{ele.heading} </h2>
             <p>{ele.subHeading}</p>
             </div>
            

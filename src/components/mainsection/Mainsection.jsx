@@ -1,13 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './mainsection.css';
 import Trending from '../trending/Trending'
 import Popularartist from '../popularartist/Popularartist'
+import SpecificMusicfile from '../../pages/specificMusicPage/SpecificMusicfile'
 
 const Mainsection = () => {
+  const [currentPage, setCurrentPage] = useState ("home")
+  const [currentEle, setCurrentEle] = useState(null)
   return (
     <main className = "mainSectionContainer">
-        <Trending/>
-        <Popularartist/>
+      {
+        currentPage === "home" ? 
+        <>
+          <Trending setCurrentPage={setCurrentPage} setCurrentEle={setCurrentEle} />
+          <Popularartist setCurrentPage={setCurrentPage}/>
+        </> : currentPage === "musicSpecificPage" ? 
+        <>
+        <SpecificMusicfile currentEle={currentEle}/>
+        </> : 
+        currentPage === "aristSpecificPage" ? 
+          <>artist</> : 
+          null
+      }  
     </main>
     
     

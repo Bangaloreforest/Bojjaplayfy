@@ -7,7 +7,7 @@
     background-color: #181818; /* Dark background */
     color: white; /* Text color */
     font-family: Arial, sans-serif;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   
   /* Left section styling */
@@ -22,6 +22,22 @@
     margin-right: 10px;
   }
   
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  .navbar-logo {
+    animation: blink 1.5s infinite;
+  }
+
   .navbar-appname {
     font-size: 18px;
     margin-right: 20px;
