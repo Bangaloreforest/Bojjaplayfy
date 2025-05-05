@@ -1,7 +1,8 @@
 .mainSectionContainer{
     /* border: 2px solid yellow; */
-    width: 73%;
-    overflow-y: scroll;
+    width: 100%;
+    margin-top: 10px;
+    overflow-x: scroll;
     border-radius: 10px;
     background-image: linear-gradient(to bottom, rgb(90, 89, 89), black);
 }

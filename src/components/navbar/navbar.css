@@ -1,6 +1,9 @@
 /* General navbar styling */
 .navbar {
     display: flex;
+    max-width: 99vw;
+    height: 50px;
+    border-radius: 10px;
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
@@ -9,6 +12,20 @@
     font-family: Arial, sans-serif;
     /* border: 2px solid red; */
   }
+
+  /* Default styles */
+.navbar {
+  display: flex;
+  padding: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px;
+  }
+}
   
   /* Left section styling */
   .navbar-left {
@@ -17,7 +34,8 @@
   }
   
   .navbar-logo {
-    width: 40px; /* Adjust logo size */
+    width: 60px; /* Adjust logo size */
+    border-radius: 50px;
     height: auto;
     margin-right: 10px;
   }

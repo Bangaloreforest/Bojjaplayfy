@@ -1,17 +1,22 @@
-import React from 'react'
+import React from 'react';
 import './trending.css';
-import Trendingcard from '../trendingCard/Trendingcard' 
+import Trendingcard from '../trendingCard/Trendingcard';
 
-const Trending = ({setCurrentPage,setCurrentEle}) => {
+const Trending = ({ setCurrentPage, setCurrentEle }) => {
   return (
-    <div className ='trendingSectionMainContainer'>
-      <span>
-      Tollywood Trending Songs
-      </span>
-      
-      <Trendingcard setCurrentPage={setCurrentPage} setCurrentEle={setCurrentEle} />
-    </div>
-  )
-}
+    <div className="trendingSectionMainContainer">
+      {/* Header Section */}
+      <div className="trendingHeader">
+        <img src="src/assets/images/svac.png" alt="Logo" className="Trending-logo" />
+        <h1>S V Annamacharya Nithya Sankeerthana Songs</h1>
+      </div>
 
-export default Trending
+      {/* Trending Card Section */}
+      <div className="trendingCardContainer">
+        <Trendingcard setCurrentPage={setCurrentPage} setCurrentEle={setCurrentEle} />
+      </div>
+    </div>
+  );
+};
+
+export default Trending;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './mainsection.css';
 import Trending from '../trending/Trending'
-import Popularartist from '../popularartist/Popularartist'
+
 import SpecificMusicfile from '../../pages/specificMusicPage/SpecificMusicfile'
 
 const Mainsection = () => {
@@ -13,7 +13,7 @@ const Mainsection = () => {
         currentPage === "home" ? 
         <>
           <Trending setCurrentPage={setCurrentPage} setCurrentEle={setCurrentEle} />
-          <Popularartist setCurrentPage={setCurrentPage}/>
+          
         </> : currentPage === "musicSpecificPage" ? 
         <>
         <SpecificMusicfile currentEle={currentEle}/>

@@ -1,14 +1,34 @@
 .trendingSectionMainContainer{
-    /*border: 2px solid greenyellow;*/
-    width: 98%;
-    height: 75%;
+    /* border: 2px solid greenyellow; */
+    /* position: fixed; */
+    width: 100%;
+    height: 25%;
     border-radius: 10px;
     margin: auto;
-    padding: 1rem 0; /* left, top*/
-    
+    padding: 1rem 0; /* left, top*/  
+    background-size: cover;
+    background-position: center;
+     /* background-image: url('src/assets/images/aanamdanilayam.png'); */
+
 }
 
-.trendingSectionMainContainer span {
-    font-size: 1rem;
-    font-weight: 500;
+.trendingHeader{
+    display: flex;  
+    padding: 1rem; 
+    position: fixed; 
+    height: 30px;
+    column-gap: 30px;
+}
+
+.Trending-logo{
+    width: auto;
+    height: 100px;
+}
+
+.trendingCardContainer{
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    width: auto;
+    height: 390px;
+    margin-top: 200px;
 }

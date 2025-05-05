@@ -21,14 +21,9 @@ const Sidebar = () => {
 
       <div className="sidebarMiddleSection">
         <Cards
-          heading="Create Your First Playlist"
+          heading="Library"
           subheading="It's easy, and we will help you."
-          buttontext="Create Playlist"
-        />
-        <Cards
-          heading="Let's find some podcasts to follow"
-          subheading="We'll keep you updated."
-          buttontext="Browse Podcasts"
+          buttontext="Playlist"
         />
       </div>
 
